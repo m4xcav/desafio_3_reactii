@@ -15,3 +15,48 @@ a:hover {
   color: red;
   text-shadow: 1px 1px 1px black;
 }
+
+/* gallery */
+.gallery {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+
+.grid-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery .photo {
+  cursor: pointer;
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 400px;
+  width: 300pX;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black solid;
+  text-align: left;
+  font-size: 250%; 
+  -webkit-text-stroke: 1.5px black;
+  -webkit-text-fill-color: white;
+}
+
+.gallery .photo:hover {
+  box-shadow: 0px 0px 2px 1px black;
+}
+
+.gallery .photo svg {
+  align-self: flex-end;
+}
+
+.p-3 {
+  padding: 30px;
+}
