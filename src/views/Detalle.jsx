@@ -12,9 +12,10 @@ const Detalle = () => {
         const res = await fetch(url);
         const data = await res.json();
 
-        const image = data.sprites.other.dream_world.front_default
-        // falta agregar los stats y los types aqui
-        setPokemon({image, name});
+        const src = data.sprites.other.dream_world.front_default
+        const stats = data.stats
+        const tipo = data.types.map(p=>p.type.name);
+        setPokemon({src, name, tipo, stats});
        
     }
 
