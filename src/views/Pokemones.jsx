@@ -39,7 +39,7 @@ export const Pokemones = () => {
       <div className="text-center">
         <h1>Pokemones</h1>
         <p>haz doble click para obtener los detalles del Pokemon</p>
-        <div className="gallery grid-columns-5 p-3">
+        <div className="gallery grid-columns-3 p-3">
           {pokelist.map((poke) => (
             <div key={poke.id} 
             onClick={() => {

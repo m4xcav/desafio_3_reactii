@@ -18,6 +18,7 @@ a:hover {
 
 /* gallery */
 .gallery {
+  margin-left: 10%;
   display: grid;
   gap: 10px;
   justify-content: center;
@@ -26,8 +27,8 @@ a:hover {
 .grid-columns-5 {
   grid-template-columns: repeat(5, 1fr);
 }
-.grid-columns-4 {
-  grid-template-columns: repeat(4, 1fr);
+.grid-columns-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .gallery .photo {
